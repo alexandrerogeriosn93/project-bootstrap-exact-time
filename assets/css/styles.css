@@ -82,7 +82,8 @@ body {
   justify-content: space-between;
 }
 
-#search-form {
+#search-form,
+#news-form {
   width: 100%;
   margin: 2em 0;
   border: solid 2px #626262;
@@ -90,17 +91,20 @@ body {
   padding: 5px 15px;
 }
 
-#search-form input {
+#search-form input,
+#news-form input {
   background-color: transparent;
   border: none;
   color: #fff;
 }
 
-#search-form input:focus {
+#search-form input:focus,
+#news-form input:focus {
   box-shadow: none;
 }
 
-#search-form input::placeholder {
+#search-form input::placeholder,
+#news-form input::placeholder {
   color: #fff;
 }
 
@@ -320,6 +324,92 @@ body {
   background-image: url("../img/insta6.jpg");
 }
 
+#footer-links-container {
+  border-bottom: solid 1px #626262;
+}
+
+#footer .footer-column {
+  padding: 2em;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#footer-links-container h3 {
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+#footer-links-container li {
+  font-size: 0.8em;
+  text-align: center;
+}
+
+#footer-links-container a {
+  text-decoration: none;
+}
+
+#footer-links-container a:hover {
+  color: #c09578;
+}
+
+#footer-center {
+  border-left: solid 1px #626262;
+  border-right: solid 1px #626262;
+}
+
+#footer-center h3 {
+  font-weight: 900;
+}
+
+#footer-center .store-phone {
+  color: #c09578;
+  font-weight: bold;
+  font-size: 2em;
+  margin-top: -15px;
+}
+
+#newsletter-container {
+  border-bottom: solid 1px #626262;
+  text-align: center;
+  padding: 20px;
+}
+
+#news-form {
+  max-width: 600px;
+  margin: 15px auto;
+}
+
+#news-form i {
+  font-size: 1.5em;
+}
+
+#news-form .btn {
+  color: #fff;
+}
+
+#social-container {
+  margin: 20px auto;
+}
+
+#social-container i {
+  font-size: 1.5em;
+  margin: 10px;
+  cursor: pointer;
+  color: #626262;
+  transition: 0.3s;
+}
+
+#social-container i:hover {
+  color: #c09578;
+}
+
+#copy-container {
+  text-align: center;
+  padding: 30px;
+}
+
 @media (min-width: 768px) {
   .navbar-brand {
     text-align: left;
@@ -330,9 +420,10 @@ body {
     display: flex;
   }
 
-  #search-form {
+  #search-form,
+  #news-form {
     width: 50%;
-    margin: 0;
+    margin: auto;
   }
 
   #slider .carousel-item,
@@ -359,5 +450,9 @@ body {
 
   #bottom-banner h2 {
     font-size: 6em;
+  }
+
+  #footer .footer-column {
+    padding: 5em 2em;
   }
 }
